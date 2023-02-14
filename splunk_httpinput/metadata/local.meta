@@ -1,7 +1,5 @@
 [inputs/http]
 version = 9.0.3
-modtime = 1676388031.116381000
 
 [inputs/http%3A%2F%2Ftesttoken]
 version = 9.0.3
-modtime = 1676387993.022842000

@@ -18,7 +18,7 @@ outputs:
     enableMultiMetrics: false
     authType: manual
     onBackpressure: block
-    url: http://concurrencytesting-splunk-1:8088/services/collector/event
+    url: https://concurrencytesting-splunk-1:8088/services/collector/event
     useRoundRobinDns: false
     type: splunk_hec
     token: "SRF495CD-KSJF-4WFW-FS4F-VS098324LNKM"

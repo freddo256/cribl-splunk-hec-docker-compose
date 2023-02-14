@@ -5,6 +5,6 @@ inputs:
     pqEnabled: false
     streamtags: []
     samples:
-      - eventsPerSec: 1000
+      - eventsPerSec: 10
         sample: palo_alto_traffic
     type: datagen
