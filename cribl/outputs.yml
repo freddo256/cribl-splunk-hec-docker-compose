@@ -1,0 +1,24 @@
+outputs:
+  test:
+    systemFields:
+      - cribl_pipe
+    streamtags: []
+    loadBalanced: false
+    nextQueue: indexQueue
+    tcpRouting: nowhere
+    concurrency: 32
+    maxPayloadSizeKB: 1024
+    maxPayloadEvents: 0
+    compress: false
+    rejectUnauthorized: false
+    timeoutSec: 30
+    flushPeriodSec: 1
+    failedRequestLoggingMode: none
+    safeHeaders: []
+    enableMultiMetrics: false
+    authType: manual
+    onBackpressure: block
+    url: http://concurrencytesting-splunk-1:8088/services/collector/event
+    useRoundRobinDns: false
+    type: splunk_hec
+    token: "SRF495CD-KSJF-4WFW-FS4F-VS098324LNKM"

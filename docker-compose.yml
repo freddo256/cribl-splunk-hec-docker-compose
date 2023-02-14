@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  cribl:
+    image: "cribl/cribl:latest"
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./cribl:/opt/cribl/local/cribl
+  splunk:
+    image: "splunk/splunk:latest"
+    ports:
+      - "8000:8000"
+    platform: linux/amd64
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=splunkdev
+    volumes:
+      - ./splunk_httpinput:/opt/splunk/etc/apps/splunk_httpinput
+    deploy:
+      replicas: 1
